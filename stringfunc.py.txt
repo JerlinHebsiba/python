@@ -1,0 +1,162 @@
+s=16.09
+print("type of s is",type(s))
+
+print("enter a value")
+s=int(input())
+if(s>=60):
+    print("greater than 60")
+    else:
+        print("lesser than 60")
+
+
+count=0
+for i in range(2,50):
+    if(i%2==0):
+        print(i,",")
+        count+=1
+        if(count>=10):
+            break
+
+
+x1=y1=z1=w1=50
+print("x1:",x1,"y1:",y1,"z1:",z1,"w1:",w1)
+
+
+print("enter the number:")
+num=int(input())
+if(num%2==0):
+    print("number is divisible by 2")
+    elif(num%3==0):
+        print("number is divisible by 3")
+        else:
+            print("number is not divisible by 2 or 3")
+
+
+
+def simpleint(p,n,r):
+    interest=(p*n*r)/100
+    print(interest)
+    print("enter the principle")
+    x=int(input())
+    print("enter the number of years:")
+    y=int(input())
+    print("enter the rate:")
+    z=int(input())
+    simpleint(x,y,z)
+
+
+x,y,z=80,'lily',3.14
+print("interger variable:",x)
+print("string variable:",y)
+print("floating variable:",z)
+
+
+print("enter a value:")
+val=int(input())
+if (val<=40):
+    print("average")
+    elif(val<40 and val<50):
+        print("good")
+        else:
+            print("very good")
+
+
+factorial=int(input("enter a number:"))
+cal_fac(factorial)
+
+
+z=500
+print(z)
+del z
+print(z)
+
+
+def sumofseries(n):
+    result=0
+    i=1
+    while i<=n:
+        result+=i
+        i+=1
+        return result
+
+
+print("enter the 1st number:")
+f=int(input())
+print("enter the 2nd number:")
+s=int(input())
+print("enter the 3rd number:")
+t=int(input())
+result=max(f,s,t)
+print("the biggest number is:",result)
+if(f>s):
+    if(f>t):
+        print("first number is biggest")
+        elif(s>t):
+            print("second number is biggest")
+            else:
+                print("third number is biggest")
+
+
+
+
+def stringfunc():
+    s=int(input("ENTER THE FUNCTION NAME:1.swapcase() 2.capitalize() 3.isalpha() 4.strip() 5.isdigit() 6.replace() 7.title() 8.expandtabs() 9.count() 10.isupper()"))
+    if s==1:
+        print("SWAPCASE IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.swapcase()
+        print("output:",optstr)
+    elif s==2:
+        print("CAPITALIZE FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.capitalize()
+        print("output:",optstr)
+    elif s==3:
+        print("ISALPHA FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.isalpha()
+        print("output:",optstr)
+    elif s==4:
+        print("STRIP FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.strip()
+        print("output:",optstr)
+    elif s==5:
+        print("ISDIGIT FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.isdigit()
+        print("output:",optstr)
+    elif s==6:
+        print("REPLACE FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        oldstr=input("Enter substring to replace:")
+        newstr=input("Enter the new substring:")
+        optstr=inpstr.replace(oldstr,newstr)
+        print("output:",optstr)
+    elif s==7:
+        print("TITLE FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.title()
+        print("output:",optstr)
+    elif s==8:
+        print("EXPANDTABS FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.expandtabs()
+        print("output:",optstr)
+    elif s==9:
+        print("COUNT FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.count()
+        print("output:",optstr)
+    elif s==10:
+        print("ISUPPER FUNCTION IS BEEN PERFORMING")
+        inpstr=input("Enter string:")
+        optstr=inpstr.isupper()
+        print("output:",optstr)
+    else:
+        print("INVALID CHOICE")
+        cont_choice=input("DO YOU WANT TO CONTINUE?(yes/no):")
+    if cont_choice.lower()=="no":
+        print("program stopped")
+    else:
+        strinfunc()
